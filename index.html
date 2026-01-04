@@ -21,19 +21,15 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
 
 <body class="index-page">
@@ -41,10 +37,6 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -52,7 +44,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="project.html">Project</a></li>
-          <li><a href="certfications.html">Certifications</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
           
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -119,6 +111,236 @@
 
     </section><!-- /Hero Section -->
 
+    <!-- Gallery Section (Interactive with Bootstrap modals) -->
+  <!--- <section class="container my-5" id="gallery" data-aos="zoom-in">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row g-3">
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img1" alt="Project 1">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1_2.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img2" alt="Project 2">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1_3.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 3">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1_4.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 4">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1_5.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 5">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1_6.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 6">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1_7.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 7">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p1_8.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 8">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p2.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 9">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p2_2.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 10">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p2_3.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 11">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p2_4.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 12">
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/img/projects/p2_5.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#img3" alt="Project 3">
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- Bootstrap Modals for Gallery (Lightbox Effect) -->
+  <!---  <div class="modal fade" id="img1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1.png.jpg" class="w-100" alt="Project 1">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1_2.jpg" class="w-100" alt="Project 2">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1_2.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1_3.jpg" class="w-100" alt="Project 3">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1_3.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1_4.jpg" class="w-100" alt="Project 4">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1_4.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img5" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1_5.jpg" class="w-100" alt="Project 5">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1_5.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img6" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1_6.jpg" class="w-100" alt="Project 6">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1_6.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img7" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1_7.jpg" class="w-100" alt="Project 7">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1_7.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img8" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p1_8.jpg" class="w-100" alt="Project 8">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p1_8.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img9" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p2.jpg" class="w-100" alt="Project 9">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p2.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img10" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p2_2.jpg" class="w-100" alt="Project 10">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p2_2.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img11" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p2_3.jpg" class="w-100" alt="Project 11">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p2_3.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img12" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p2_4.jpg" class="w-100" alt="Project 1">
+            <div class="portfolio-overlay">
+            <a href="assets/img/projects/p2_4.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="img13" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="assets/img/projects/p2_5.jpg" class="w-100" alt="Project 13">
+            <div class="portfolio-overlay"> 
+            <a href="assets/img/projects/p2_5.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
   </main>
 
   <footer id="footer" class="footer">
@@ -133,10 +355,7 @@
         <a href="https://github.com/maheennaaz"><i class="bi bi-github"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        
         Designed by <a href="https://bootstrapmade.com/">MMN</a>
       </div>
     </div>
@@ -163,6 +382,15 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- AOS Animation (CDN) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
 </body>
 
